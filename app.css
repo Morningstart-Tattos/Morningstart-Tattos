@@ -1,0 +1,856 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+
+.encabezado{  
+    width: 100%;
+    height: 115px;   /*morning tattos titulo , tattos*/
+  }
+
+.imglogo{
+    position: relative;
+    bottom: -5px;    /*imagen del logo*/
+   width: 100px;    
+   height: 100px;
+   z-index: 1;
+  }
+  
+.imglogo:hover{
+    transform: scale(1.1);
+    background-color: white;     /*animacion de la imagen del logo*/
+    color:black;
+    transition: all 0.5s ease-in-out;
+  
+  }
+
+.img{
+    position: relative;
+    display: flex;
+    bottom: 115px;
+    justify-content: center;
+   width: 100%;                         /*imagen de morning */
+   height: 129px;
+ }
+
+ .barra-nav{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    /*barra de navegacion*/
+    background-color: black;
+    color:white;
+ }
+ .a-nav{
+    
+    text-decoration: none;          /*links*/ 
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+ }
+ .a-nav:hover{
+    transform: scale(1.1);             
+    color: gold;                      /*animacion de los links*/
+    transition: all 0.2s ease-in-out;
+}
+  .fondo{
+    width: 100%;
+    height: 70vh;
+    background-image: url(./img/icono.jpg); /*fondo de pantallade la pag principal*/
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+body{
+  background-color: black;    /*color del body*/
+}
+.contenedor-body{
+  
+  height: 1050px; 
+    width: 100%;  
+    
+                                  /*contiene el bienvenidos*/
+}
+
+h1{
+  display: flex;
+  justify-content:center;
+    text-align: center;
+    width: 65%;
+    left: 18%;
+    top: 3%;
+    font-size: 70px;            /*bienvenidos*/
+    color: white;
+    position: relative;
+  }
+  h1:hover{
+    transform: scale(1.1);      /*animacion de bienvenidos*/
+    color: gold;
+    transition: all 1.0s ease-in-out;
+  }
+  
+
+  .whatsapp{
+    position:absolute;
+    right: 0.8%;
+    width: 50px;
+    height: 50px;         
+    line-height: 55px;             /*icino de whatsapp*/
+    border-radius: 45px;
+    box-shadow:  7px 13px 37px #000;
+  }
+  .whatsapp:hover{
+    transform: scale(1.1);
+  background-color: white;     /*animacion de whatsapp*/
+  color:black;
+  transition: all 1.0s ease-in-out;
+  }
+
+  
+ 
+  .contenedor-texto{
+    width: 80%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .text{
+                               /*parrafos*/
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+ 
+ .rebota{
+  margin-left:50%;
+  margin-right: 50%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  box-shadow:  7px 13px 37px rgb(0, 0, 0);
+  animation: animateBall 0.9s linear infinite;
+ }
+ @keyframes animateBall{
+  50%, 10%{
+    transform: translateY(3px);
+  }
+  40% {
+    transform: translateY(9px);
+  }
+  60%{
+    transform: translateY(2px);
+  }
+ }
+ .footer{
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    background-color: black;
+    
+ }
+ 
+  h4{
+    position: absolute;
+    justify-content: center;                   /*nombre de la empresa*/
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+   font-weight: bold;
+   
+   
+
+  }
+  
+  .navegacion{
+    display:flex;
+    align-items: center;   /*links en el footer*/
+    position:absolute;
+    top:10%;
+    left:6%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration:underline;
+  }
+  .inicio-footer{
+    display:flex;
+    align-items: center;       /*link de inicio*/
+    position:absolute;
+    top:15%;
+    left:3%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: none;
+  }
+ .contacto-footer{
+  display:flex;
+    align-items: center;          /*links de contacto*/
+    position:absolute;
+    top:20%;
+    left:4%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: none;
+ }
+ .tattos-footer{
+  display:flex;
+    align-items: center;          /*links de tatuajes*/
+    position:absolute;
+    top:15%;
+    left:10%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: none;
+ }
+ .cuidado-footer{
+  display:flex;
+    align-items: center;          /*links de cuidado*/
+    position:absolute;
+    top:20%;
+    left:10%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: none;
+ }
+
+  .pago{
+    display:flex;
+    align-items: center;    /*tipos de pago*/
+    position:absolute;
+    top:30%;
+    left:7%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: underline;
+  }
+  .img-mercadopago{
+    width: 40px;
+    margin: 5px;
+    display:flex;          /*imagen de mercado pago*/
+    align-items: center;
+    position:absolute;
+    top:38%;
+    left:3%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .img-naranja{
+    width: 40px;
+    margin: 5px;
+    display:flex;
+    align-items: center;       /*imagen de tarjeta naranaj*/
+    position:absolute;
+    top:38%;
+    left:8%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .img-card{
+    width: 40px;
+    margin: 5px;          /*imagen de tarjeta masterd card*/
+    display:flex;
+    align-items: center;
+    position:absolute;
+    top:38%;
+    left:13%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .img-transferencia{
+    width: 40px;
+    margin: 5px;
+    display:flex;
+    align-items: center;        /*imagen de transferencia*/
+    position:absolute;
+    top:50%;
+    left:3%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .img-visa{
+    width: 40px;          /*imagen de tarjeta visa*/
+    margin: 5px;
+    display:flex;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .img-efectivo{
+    width: 40px;
+    margin: 5px;       /*imagen de efectivo*/
+    display:flex;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:13%;
+    transform: translate(-50%, -50%);
+    margin:0;
+  }
+  .contactos{
+    display:flex;
+    align-items: center;    /*contactos*/
+    position:absolute;
+    top:60%;
+    left:79px;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: underline;
+  }
+  .telefono{
+    display:flex;
+    align-items: center;  /*telefono de la empresa*/
+    position:absolute;
+    top:66%;
+    left:6%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+  }
+  .correo{
+    display:flex;
+    align-items: center;   /*correo de la empresa*/
+    position:absolute;
+    top:72%;
+    left:115px;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+  }
+ 
+  .redes{
+    display:flex;
+    align-items: center;   /*redes sociales*/
+    position:absolute;
+    top:80%;
+    left:6.5%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    text-decoration: underline;
+  }
+  .insta-footer{
+    display:flex;
+    align-items: center;  /*intagram de la empresa en el footer*/
+    position:absolute;
+    top:85%;
+    left:3%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    border-radius: 45px;
+    box-shadow:  7px 13px 37px #000;
+  }
+  .tiktok-footer{
+    display:flex;
+    align-items: center;   /*tiktok en el footer*/
+    position:absolute;
+    top: 85%;
+    left:6%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    border-radius: 45px;
+    box-shadow:  7px 13px 37px #000;
+  }
+  .face-footer{
+    display:flex;
+    align-items: center;   /*facebook en el footer*/
+    position:absolute;
+    top:85%;
+    left:9%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+    border-radius: 45px;
+    box-shadow:  7px 13px 37px #000;
+  }
+
+  .icono-footer{
+    width: 20px;
+    margin: 5px;   /*tamaño de los iconos*/
+    border-radius: 30%;
+  }
+  
+  
+  
+  .ubicacion{
+    display:flex;
+    align-items: center; /*ubicacion*/
+    position:absolute;
+    top:25%;
+    left:85%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: white;
+  }
+  .mapa{
+   
+    display:flex;
+    align-items: center;  /*mapa en el footer*/
+    position:absolute;
+    top:50%;
+    left:83%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    bottom: 140px;
+    margin: 20px;
+  
+  }
+  .logo-footer{
+    width: 20px;   /*logo de footers*/
+    margin: 5px;
+    
+  }
+
+  .imgn{
+    height: 250px;  /*imagen del tatuador*/
+    width: 250px;
+  }
+  .contenedo{
+    margin: 10px;
+    text-align: center;       /*contenedor de las imagenes de tatuajes*/
+  }
+
+  .imagen{
+    width: 400px;  /*imagenes de tatuajes*/
+   
+  }
+  .imagen:hover{
+    transform: scale(1.07);
+    background-color: white;   /*animacion de las imagenes de tatuajes*/
+    color:black;
+    transition: all 0.5 ease-in-out;
+  
+  }
+  .descripcion{
+    display:flex;
+    margin: 120px;  /*contenedor de descripcion del tatuador*/
+    bottom: 50px;
+    right: 50px;
+    position:relative;
+   
+  }
+  .parrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*descripcion del tatuador*/
+    margin: -4px;
+    right: -30px;
+    position: relative;
+    color: white;
+  }
+  .imagen-info{
+    position: relative;
+    top: 75%;
+    right: 1150%;
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    box-shadow:  7px 13px 37px rgb(0, 0, 0);
+    animation: animateBall 0.9s linear infinite;
+   }
+   @keyframes animateBall{
+    50%, 10%{
+      transform: translateY(3px);
+    }
+    40% {
+      transform: translateY(9px);
+    }
+    60%{
+      transform: translateY(2px);
+    }
+   }
+ 
+
+  .video{
+    display: flex;
+    height: 500px;          /*video de como cuidar el tatuaje*/
+    width: 500px;
+    position: relative;
+  }
+  .contenedor{
+    width: 45%;
+    display: flex;
+    position: relative;
+    bottom: 490px;
+    left: 50%;
+  }
+  .texto{
+    color: white;
+  }
+  
+  @media(max-width:500px){
+      body{
+        width: 99%;
+      
+      }
+      
+      .img{
+        width: 100%;
+      }
+
+      
+      .barra-nav{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;    /*barra de navegacion*/
+        background-color: black;
+        color:white;
+     }
+     h1{
+      font-size: 26px;
+      font-weight: 500px;
+      margin-top: 3px;
+      top: 1%;
+      
+    }
+    .contenedor-texto{
+      top: 4%;
+    }
+     .whatsapp{
+      position:absolute;
+      top: 25%;
+    right: 2%;
+    width: 50px;
+    height: 50px;         
+    line-height: 55px;             /*icino de whatsapp*/
+    border-radius: 45px;
+    box-shadow:  7px 13px 37px #000;
+     }
+      .rebota{
+        margin-left:50%;
+        margin-right: 50%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-left: 40%;
+        width: 60px;
+        height: 60px;
+        border-radius: 40%;
+        box-shadow:  7px 13px 37px rgb(0, 0, 0);
+        animation: animateBall 0.9s linear infinite;
+       }
+       @keyframes animateBall{
+        50%, 10%{
+          transform: translateY(3px);
+        }
+        40% {
+          transform: translateY(9px);
+        }
+        60%{
+          transform: translateY(2px);
+        }
+       }
+      
+      h4{
+        position: absolute;
+        justify-content: center;                   /*nombre de la empresa*/
+        top: 3%;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        margin: 0;
+        color: white;
+       font-weight: bold;
+       font-size: 18px;
+
+       
+       
+    
+      }
+      .footer{
+        
+            width: 100%;
+            height: 160%;
+            background-color:black;
+            
+            
+         
+      }
+      
+      .navegacion{
+        
+        top:8%;
+        left:16%;
+        transform: translate(-50%, -50%);
+        color: white;
+       
+      }
+      .inicio-footer{
+        
+        top:12%;
+        left:11%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        
+      }
+     .contacto-footer{
+      
+        top:15%;
+        left:13%;
+        transform: translate(-50%, -50%);
+        
+        color: rgb(255, 255, 255);
+        
+     }
+     .tattos-footer{
+      
+        top:12%;
+        left:32%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+     }
+     .cuidado-footer{
+      top:15%;
+        left:32%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+     }
+    
+      .pago{
+       
+        top:19%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      .img-mercadopago{
+        width: 40px;
+        margin: 5px;
+        top:22%;
+        left:8%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .img-naranja{
+        width: 40px;
+        margin: 5px;
+        top:22%;
+        left:19%;
+        transform: translate(-50%, -50%);
+       
+      }
+      .img-card{
+        width: 35px;
+        margin: 5px;          /*imagen de tarjeta masterd card*/
+        
+        top:22%;
+        left:29%;
+        transform: translate(-50%, -50%);
+       
+      }
+      .img-transferencia{
+        width: 40px;
+        margin: 5px;
+       
+        top:27%;
+        left:8%;
+        transform: translate(-50%, -50%);
+       
+      }
+      .img-visa{
+        width: 40px;          /*imagen de tarjeta visa*/
+        margin: 5px;
+        
+        top:27%;
+        left:19%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .img-efectivo{
+        width: 40px;
+        margin: 5px;       /*imagen de efectivo*/
+        top:27%;
+        left:29%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .contactos{
+        
+        top:34%;
+        left:18%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      .telefono{
+        top:39%;
+        left:17%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+      }
+      .correo{
+       
+        top:43%;
+        left:30%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+      }
+     
+      .redes{
+        top:48%;
+        left: 19%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      .insta-footer{
+       
+        top:53%;
+        left:9%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        border-radius: 45px;
+        box-shadow:  7px 13px 37px #000;
+      }
+      .tiktok-footer{
+        
+        top: 53%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        
+        color: rgb(253, 253, 253);
+        border-radius: 45px;
+        box-shadow:  7px 13px 37px #000;
+      }
+      .face-footer{
+        
+        top:53%;
+        left:30%;
+        transform: translate(-50%, -50%);
+        margin:0;
+        color: rgb(255, 255, 255);
+        border-radius: 45px;
+        box-shadow:  7px 13px 37px #000;
+      }
+      .ubicacion{
+     
+        top:60%;
+        left:13%;
+        transform: translate(-50%, -50%);
+        
+        color: rgb(255, 255, 255);
+      }
+      .mapa{
+       
+        
+        top:78%;
+        left:39%;
+        transform: translate(-50%, -50%);
+        bottom: 140px;
+        margin: 20px;
+      
+      }
+      .icono-footer{
+        height:30px;
+        width: 30px;
+        
+      }
+      .fondo{
+        
+       
+        
+        background-position-y:-100%;
+        background-repeat: repeat;
+        
+        
+      }
+      .contenedor-body{
+        height: 1400px;
+      }
+      .whatsapp{
+        bottom: 30%;
+      }
+      
+      .descripcion{
+        
+        width: 95%;  /*contenedor de descripcion del tatuador*/
+        left: -24%;
+      
+        position:relative;
+        height: 700px;
+        bottom: 90px;
+       
+      }
+      .imgn{
+        width:200px;
+        height: 200px;
+        left: 6%;
+        position: relative;
+      }
+      .parrafo{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*descripcion del tatuador*/
+        bottom: -220px;
+        right: 42%;
+        width: 80%;
+        height: 470px;
+        
+        
+       
+        position: relative;
+        color: rgb(236, 236, 236);
+      }
+      .insta{
+        width: 4%;
+        height: 3%;
+        right: 26%;
+        position: relative;
+      }
+      .imagen-info{
+        position: relative;
+        top: 4%;
+        right: 10%;
+        width: 60px;
+        height: 60px;
+        border-radius: 40%;
+        box-shadow:  7px 13px 37px rgb(0, 0, 0);
+        animation: animateBall 0.9s linear infinite;
+       }
+       @keyframes animateBall{
+        50%, 10%{
+          transform: translateY(3px);
+        }
+        40% {
+          transform: translateY(9px);
+        }
+        60%{
+          transform: translateY(2px);
+        }
+       }
+      .video{
+        display: flex;
+        height: 450px;     
+         width: 100%;                     /*video de como cuidar el tatuaje*/
+        justify-content: center;
+        position: relative;
+      }
+      .contenedor{
+        width: 45%;
+        display: flex;
+        position: relative;
+        bottom: -30%;
+        left: 10%;
+      }
+  }
